@@ -1,4 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: "Raleway", sans-serif;
+    /* color: #f4f4f4; */
+}
+
+.bShadow{
+    transition: 1s;
+}
+
+.bShadow:hover{
+    box-shadow: 1px 1px 8px #aeaeae82;
+
+}
+
+/* loader */
+
+.ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+  }
+  .ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #f8a100 transparent #ffb803 transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  
+  .loadbg{
+    background-color: #1414149e;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+  }
+  
+  .loadbx{
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 3;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 8px;
+    display: grid;
+    place-content: center;
+  }
