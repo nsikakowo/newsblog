@@ -17,7 +17,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "postbuild": "react-spa-prerender"
   },
   "eslintConfig": {
     "extends": [
@@ -40,6 +41,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.7",
     "postcss": "^8.4.14",
+    "react-spa-prerender": "^1.0.14",
     "tailwindcss": "^3.1.5"
   }
 }

@@ -47,8 +47,8 @@ const SinglePost = () => {
             </div>
         <div className='flex my-[10px]'>
             {
-                photos.map(img=> (
-                    <div className='flex flex-row w-[100px] h-[100px]'>
+                photos.map((img, index)=> (
+                    <div key={index} className='flex flex-row w-[100px] h-[100px]'>
                         <img src={img} alt="" />
 
                     </div>
